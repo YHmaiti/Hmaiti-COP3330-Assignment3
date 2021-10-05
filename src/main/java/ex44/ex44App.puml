@@ -1,0 +1,13 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solution
+ *  Copyright 2021 Yohan Hmaiti
+ */
+
+@startuml
+class App{
+
+    + main(String[] args)
+    + JSONCHECKER(String element, String newDir)
+
+}
+@enduml
