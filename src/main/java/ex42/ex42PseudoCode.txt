@@ -1,0 +1,17 @@
+1) start the program and create a class called App that will have the program within it
+and will utilise the java.util*; and the java.io.*; as main imports.
+
+2) The class App will have two methods, the main method which will represent a driver method
+and the ArrayList<String> type method called InputHandler, which takes as a parameter
+a string storing the input file directory.
+
+3) By starting the program the main method is called where the InputHandler method is called while passing the input file
+directory to the method which returns an array list that contains the information scanned from the input file through
+the use of loops, bufferedReader tool and also with exception handling using a try catch approach.
+
+4) After the array list of type String is returned to main, the elements of the list will be printed
+following the specific format specified by the assignment, through the use of arrays with the .split(",") tool
+to separate the elements of the list separated by a comma and then store them within the array. In addition, the method
+uses loops along with a String.format() tool to print with respect to the expected format of output.
+
+5) End of the program

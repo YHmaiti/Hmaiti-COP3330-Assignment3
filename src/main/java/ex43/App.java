@@ -91,7 +91,7 @@ public class App {
 
             System.out.print("Created " + newDir + name);
 
-        } else {
+        } else if (!file.mkdirs()) {
 
             System.out.print("(Error) There was a problem creating the new directory! Try Again!");
 
@@ -163,16 +163,15 @@ public class App {
 
         // check if the creation of the folder was successful
         // print the output accordingly
-        if (newCSS.mkdirs()) {
-
-            System.out.print("\nCreated " + newDirectory);
-
-        } else {
+        if (!newCSS.mkdirs()) {
 
             System.out.print("\n(Error) The directory for the CSS file was not generated successfully! Try Again!");
 
-        }
+        } else {
 
+            System.out.print("\nCreated " + newDirectory);
+
+        }
         // return the directory for testing purposes mainly
         // to confirm that everything went successful
         return newDirectory;

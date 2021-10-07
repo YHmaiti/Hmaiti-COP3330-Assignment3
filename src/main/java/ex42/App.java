@@ -45,7 +45,7 @@ public class App {
 
     }
 
-    // implement a function to build an array list gathering the elements
+    // implement a method to build an array list gathering the elements
     // within the input file
     public static ArrayList<String> InputHandler(String inputtedFile) {
 

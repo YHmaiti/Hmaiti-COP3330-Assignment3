@@ -41,7 +41,7 @@ public class App {
 
     }
 
-    // implement a function to build an array list gathering the elements
+    // implement a method to build an array list gathering the elements
     // within the input file and then sorting it and returning the arraylist
     public static ArrayList<String> InputHandlerWithSort(String inputtedDir,String outputtedDir) {
 

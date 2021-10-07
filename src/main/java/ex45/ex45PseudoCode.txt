@@ -1,0 +1,19 @@
+1) start the program and create a class called App that will have the program within it
+and will utilise the java.util*; and the java.io.*; as main imports.
+
+2) The class has three methods, main, ArrayList<String> getInput, and void UpdateOutput
+
+3) The main method is called first, where we build a string that stores the input file
+directory and prompts the user for the outputfile name desired and then updates the output directory
+using the scanned outputfile name.
+
+4) Main calls the getInput method that takes the input file directory and returns the input
+file scanned information as an array list of type string using a bufferedReader tool and using
+try catch exception handling approach.
+
+5) After the array list is returned to main, it will be passed within the call of the UpdateOutput
+method, which will use the arraylist passed to it along with the output directory to iterate through
+the list and change the word "utilize" to "use" and then print the output successively to the screen and
+to the output file using the outputfile passed to the method.
+
+6) end of the program

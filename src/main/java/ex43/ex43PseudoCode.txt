@@ -1,0 +1,36 @@
+1) start the program and create a class called App that will have the program within it
+and will utilise the java.util*; and the java.io.*; as main imports.
+
+2) The class has 5 methods: main, (void) handleFileGeneratorDecisions, (String) htmlGenerator,(String) cssGenerator
+ and (String) jsGenerator.
+
+3) First the main method is called, where the user is prompted for the website name
+and its author along with the choice to either have a JavaScript folder and CSS folder
+or no. Depending on the answer the JSCHOICE and CSSCHOICE boolean variables are either
+set to true when the user affirms their need of those folders, or they are set to false
+if they say no.
+
+4) within the main method the handleFileGeneratorDecisions method is called which takes
+the scanned website name, author name, JSCHOICE, CSSCHOICE along with the current work directory.
+
+5) The handleFileGeneratorDecisions method updates the directory to create a new
+folder within it called "website" and prints that it was created with its directory,
+then it calls the htmlGenerator function to create the html file
+which takes the name variable, author variable and the updated directory where the index.html
+will be created. The method also calls the jsGenerator function and the cssGenerator
+methods depending on  if the user wants a JS or CSS file.
+
+6) The htmlGenerator when called will generate an index.html file with written information within it
+as requested in the format specified by the assignment. The method uses BufferedWriter tool
+and String.format() tools.
+
+7) when called the jsGenerator and cssGenerator will generate js and css folders accordingly
+and output a message in the form of "created: + directory". These methods take the updated directory
+as a parameter and use .mkdirs() to check if the folder was generated then output a success message
+or throw an exception through the try catch approach in case there was an error.
+
+8) at the end all three functions return there newDirectory where the files/folders were created and these
+are mainly just for testing purpose.
+
+9) End of the program
+

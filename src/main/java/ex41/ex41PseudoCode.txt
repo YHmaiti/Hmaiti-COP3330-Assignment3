@@ -1,0 +1,24 @@
+1) start the program and create a class called App that will have the program within it
+and will utilise the java.util*; and the java.io.*; as main imports.
+
+2) create two methods within the class, a main method that represents a driver method and
+an ArrayList<String> method called InputHandlerWithSort that takes the input and output directories
+as parameters of type String.
+
+3) After we start the program, the main method will be called where we call the
+InputHandlerWithSort function that will get the input and output directories from main,
+then it will read the input file and store the information
+sorted within an arraylist that it will return to main using through the use of
+Collections.sort() tool to sort.
+
+4) The method InputHandlerWithSort uses buffered writer and reader tools in addition to
+try catch approach to handle any exceptions and loops. The method will also print to the output file
+based on the required exercise output format desired.
+
+5) After returning the arraylist to main, the output will be then printed to the screen
+according to the desired format.
+
+6) the printing process will rely on a printOutput function that is designed just for printing
+purpose and takes a string as a parameter
+
+7) end of the program

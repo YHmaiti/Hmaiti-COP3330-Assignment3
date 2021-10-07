@@ -1,0 +1,18 @@
+1) Start within the class App that contains the program
+
+2) The class App contains two methods, main and Map<String, Integer> InputHandler. The class
+and program rely on two imports import java.io.*; and import java.util.*;
+
+3) The program starts by going to main where we build our input directory string containing the input
+file directory  then we use a bufferedReader tool and FileReader tool to scan information from the
+input file that we store continuously within an array list. Then we call the InputHandler and pass
+the input list.
+
+4) The InputHandler function that creates a map with the key as the word itself and the value
+is the frequency of that word, then returns the map to main where we use Collections.sort() to sort both
+the words and their values (frequency) then use for loops to print the word and its frequency
+in order from high to low.
+
+5) both methods in the class use try catch approaches to handle exceptions.
+
+6) end of the program

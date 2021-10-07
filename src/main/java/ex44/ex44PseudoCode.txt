@@ -1,0 +1,24 @@
+1) start the program and create a class called App that will have the program within it
+and will utilise the com.google.gson.*; java.util*; and the java.io.*; as main imports.
+
+2) The class contains two methods: main and (int) JSONCHECKER, which takes as parameters
+the product name and the directory where the JSON file is.
+
+3) At the start the main method is called where we will store the directory of the input
+JSON file as a string that we will pass to the JSONCHECKER method along with the prompted
+product name from the user. The main method uses a while loop that runs until the user enters
+a valid product name present within the input file.
+
+4) when called the JSONCHECKER method uses a Gson and Reader tools, JsonElement and JsonObject to find the
+product within the JSON file through using a while loop to go through the JSON file elements that will
+be stored in a temporary JsonArray to make it easy to iterate through the products.
+
+5) The JSONCHECKER uses a try catch approach and throw FileNotFoundException
+to catch exceptions when reading from the JSON file and either prints the product
+and its characteristics when found along with returning 1,
+otherwise it just returns 0 when the product is not found.
+
+6) after returning 1 or 0, this value is checked in main method to either continue looping if it is 0,
+otherwise the program ends.
+
+7) end of the program

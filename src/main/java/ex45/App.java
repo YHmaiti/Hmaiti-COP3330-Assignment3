@@ -35,15 +35,21 @@ public class App {
         ArrayList<String> InputList = new ArrayList<>();
         InputList = getInput(inputDir);
 
+        // create an arraylist that will store the updated list after calling the UpdateOutput method
+        ArrayList<String> finalList = new ArrayList<>();
+
         // call the function that will replace 'utilize' by 'use'
-        UpdateOutput(InputList, outputFile);
+        finalList = UpdateOutput(InputList, outputFile);
     }
 
     // function that will replace 'utilize' by 'use' and output to the appropriate file and directory
-    public static void UpdateOutput(ArrayList<String> input, String output) throws IOException {
+    public static ArrayList<String> UpdateOutput(ArrayList<String> input, String output) throws IOException {
         // counter
         int i = 0;
         String current;
+
+        // hold the updated list
+        ArrayList<String> update = new ArrayList<>();
 
         // create a Buffered Writer tool to help use write in the output file
         BufferedWriter writerTool = new BufferedWriter(new FileWriter(output));
@@ -54,7 +60,7 @@ public class App {
 
             current = input.get(i).replace("utilize", "use");
             System.out.println(current);
-
+            update.add(current);
             i++;
         }
 
@@ -73,6 +79,9 @@ public class App {
 
         // close the buffered writer tool
         writerTool.close();
+
+        // return the final arraylist for testing purposes
+        return update;
 
     }
 
